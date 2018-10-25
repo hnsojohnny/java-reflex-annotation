@@ -23,16 +23,15 @@ Stu stu = new Stu();
 
 ### 获取Class
 _java面向对象，所有要获取类的属性方法，要先获取到类的对象_
-
-* `Object.getClass()` 直接利用对象获取响应的class对象。
+  * `Object.getClass()` 直接利用对象获取响应的class对象。
   ```
     Class clz = stu.getClass();
   ```
-* `.class` 直接类名`.class`，不实例化对象。
+  * `.class` 直接类名`.class`，不实例化对象。
    ```
      Class clz = Stu.class;
    ```
-* `Class.forName()` 根据类的包名+类名来获取。
+  * `Class.forName()` 根据类的包名+类名来获取。
    ```
      Class clz = Class.forName("包名+Stu");
    ```
