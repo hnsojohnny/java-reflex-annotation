@@ -90,8 +90,15 @@ public class TestPerson{
 
 ### 利用反射获取注解信息
 类为了方便都是乱写的。
+#### 获取类注解
+```
+Class clz = Test.class;
+Test test = (Test)clz.getAnnotation(Test.class);
+```
+#### 获取属性注解
 ```
 Class clz = Test.class;
 Field field = clz.getDeclaredField("test",String.class);
 Test test = (Test)field.getAnnotation(Test.class);
 ```
+#### 获取方法注解和获取属性注解类似
